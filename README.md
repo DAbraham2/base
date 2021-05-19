@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Train Speed Controller mail
+=======
+# Train Speed Controller very well
+>>>>>>> branch-B
 
 This is a sample application for the verification laboratory.
 
