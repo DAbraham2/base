@@ -83,4 +83,16 @@ public class TrainSensorTest {
         inOrder.verify(user).setAlarmState(false);
         inOrder.verify(user).setAlarmState(true);
     }
+
+    @Test
+    public void RelativeMargin3Test(){
+        when(user.getAlarmState()).thenReturn(false);
+        when(controller.getReferenceSpeed()).thenReturn(75);
+        InOrder inOrder = inOrder(user);
+
+        sensor.overrideSpeedLimit(20);
+
+        inOrder.verify(user).setAlarmState(false);
+        inOrder.verify(user).setAlarmState(true);
+    }
 }
